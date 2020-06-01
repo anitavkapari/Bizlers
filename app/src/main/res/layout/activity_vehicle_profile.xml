@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".UpdateVehicleProfileActivity">
+        <!--<LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:layout_marginLeft="5dp"
+            android:textSize="10dp"
+            android:textColor="@color/colorPrimary"
+            android:text="VEHICLE NUMBER"/>
+
+        <EditText
+            android:id="@+id/edtVehicleNumber"
+            android:fontFamily="serif"
+            android:layout_marginTop="5dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write Vehicle Number"
+            android:gravity="clip_horizontal"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:layout_marginLeft="5dp"
+            android:textSize="10dp"
+
+            android:textColor="@color/colorPrimary"
+            android:text="MAKE"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerMake"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="serif"/>
+        <!--<EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write Vehicle Name"
+            android:gravity="clip_horizontal"
+            />
+    -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:layout_marginLeft="5dp"
+            android:textSize="10dp"
+
+            android:textColor="@color/colorPrimary"
+            android:text="MODEL"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerModel"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="serif"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textSize="10dp"
+
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimary"
+            android:text="VARIANT"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerVariant"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="serif"/>
+        <!-- <EditText
+             android:id="@+id/edtVehicleModel"
+             android:fontFamily="serif"
+             android:layout_marginTop="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Write Vehicle Model"
+             android:gravity="clip_horizontal"
+             />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:layout_marginLeft="5dp"
+            android:textSize="10dp"
+            android:textColor="@color/colorPrimary"
+            android:text=" FUEL TYPE"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerFuelType"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="serif"/>
+        <!--<RelativeLayout
+            android:id="@+id/selectPho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">-->
+        <ImageView
+            android:id="@+id/viewPhotoes"
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_add_a_photo_black_24dp"
+            />
+        <TextView
+            android:id="@+id/selectPhotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:text="Select Photo"/>
+
+        <!-- <ImageView
+             android:layout_toRightOf="@+id/selectPhotoes"
+             android:id="@+id/viewPhoto"
+             android:layout_width="300dp"
+             android:layout_height="200dp"
+             android:layout_marginLeft="10dp"
+             android:src="@drawable/ic_add_a_photo_black_24dp"
+             />-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="20dp"
+            android:onClick="Update"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"></Button>
+    </LinearLayout>
